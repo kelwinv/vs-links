@@ -64,6 +64,15 @@ ul {
   gap: 16px;
   max-height: 458px;
   overflow-y: auto;
+  padding-right: 10px;
+}
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #1f1f1f;
+  border-radius: 20px;
 }
 
 ul li {
