@@ -66,8 +66,10 @@ ul {
   overflow-y: auto;
   padding-right: 10px;
 }
-ul::-webkit-scrollbar {
-  width: 8px;
+@media (min-width: 365px) {
+  ul::-webkit-scrollbar {
+    width: 8px;
+  }
 }
 
 ul::-webkit-scrollbar-thumb {
@@ -90,6 +92,10 @@ ul li {
   height: 48px;
   background: var(--white);
   border-radius: 4px;
+}
+
+.linkContainer.destaque a {
+  background: #FFFC2B;
 }
 
 .text {
