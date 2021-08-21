@@ -66,6 +66,7 @@ ul {
   overflow-y: auto;
   padding-right: 10px;
 }
+
 @media (min-width: 365px) {
   ul::-webkit-scrollbar {
     width: 8px;
@@ -95,7 +96,12 @@ ul li {
 }
 
 .linkContainer.destaque a {
-  background: #FFFC2B;
+  background: #000;
+
+  background-clip: padding-box;
+  border: 3px solid #b800c1;
+
+  animation: spinningEdgeColor 2s alternate infinite;
 }
 
 .text {
@@ -136,4 +142,13 @@ ul li {
 .iconList .iconContainer img {
   object-fit: contain;
   max-width: 45px;
+}
+
+@keyframes spinningEdgeColor {
+  0% {
+    border-color: #b800c1;
+  }
+  100% {
+    border-color: #ff0042;
+  }
 }
